@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: black;
+  scroll-behavior: smooth;
+}
+
+#nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+  height: 10vh;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+#nav::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links a {
+  text-decoration: none;
+  margin-right: 25px;
+  font-size: 1.4em;
+  color: white;
+  opacity: 0.69;
+}
+
+.nav-links a:hover {
+  color: white;
+  opacity: 1;
+}
+
+.left-icon i {
+  font-size: 3.5em;
+  color: white;
+}
+
+#home {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 17%;
+  padding-top: 20%;
+}
+
+#home::before {
+  content: "";
+  background: url("https://images.unsplash.com/photo-1464226184884-fa280b87c399?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGFncmljdWx0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60")
+    no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  opacity: 0.59;
+}
+
+.home-box {
+  position: absolute;
+  left: 90px;
+  width: 50%;
+}
+
+.home-box p {
+  font-weight: 700;
+  font-size: 2rem;
+  word-spacing: 5px;
+}
+
+.btn {
+  width: 200px;
+  background: transparent;
+  border-radius: 20px;
+  border-color: white;
+  color: #ffffff;
+  font-size: 27px;
+  text-decoration: none;
+  margin-top: 50px;
+  padding: 15px 0;
+}
+
+.btn:hover {
+  text-decoration: none;
+}
+
+#services {
+  background-color: white;
+  padding: 5% 6%;
+  margin-top: 5%;
+}
+
+.card-holders {
+  margin: 10px 0;
+}
+
+.my-cards {
+  width: 18rem;
+  margin: 0 auto;
+  border-radius: 15px;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+
+.my-cards:hover {
+  transform: scale(1.1);
+}
+
+@media (min-width: 992px) {
+  .my-cards {
+    width: 98%;
+  }
+}
+
+.my-cards p {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
